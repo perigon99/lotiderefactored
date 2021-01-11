@@ -25,6 +25,12 @@ describe('tail', function () {
    const expectedOutput = "l,l,o";
    assert.deepStrictEqual(_.tail(input), expectedOutput); 
    });
+   
+   it("Should return igthhous from ligthouse)", function() {
+    const input = "ligthouse";
+    const expectedOutput = "g,t,h,o,u,s,e";
+    assert.deepStrictEqual(_.tail(input), expectedOutput); 
+    });
  });
 
 describe('eqArray', function () {

@@ -1,5 +1,5 @@
 {
-  "name": "lotidev2",
+  "name": "@perigon/lotide",
   "version": "1.0.0",
   "description": "",
   "main": "lotide.js",
@@ -10,7 +10,7 @@
     "test": "mocha"
   },
   "keywords": [],
-  "author": "",
+  "author": "Sebastien Perot-Morin",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.2.0",
