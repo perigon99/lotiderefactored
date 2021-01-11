@@ -15,7 +15,11 @@ const eqArrays = (firstArray, secondArray) => {
  
 //Receive check condition ouput text depending if input is true of false
 const assertArrayEqual = (condition) => {
-  condition === true ? console.log('PASS') : console.log('FAIL');
+   if(condition) {
+     return 'PASS'
+   } else {
+     'FAIL'
+   } 
 };
 
 //Scan the input to find the middle element, if more than 5 and even output 2 elements

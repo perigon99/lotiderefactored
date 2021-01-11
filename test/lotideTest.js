@@ -7,7 +7,7 @@ describe('head', function () {
  it("Should return the fist element in the input", function() {
   const input = "hello";
   const expectedOutput = "h";
-  assert.equal(_.head(input), expectedOutput); 
+  assert.strictEqual(_.head(input), expectedOutput); 
   });
 
   it("Should return 1", function() {
@@ -51,11 +51,24 @@ describe('eqArray', function () {
    });
  });
 
+ describe('assetArrayEqual', function () {
+  it("Should return true if 2 arrays are identical)", function() {
+    assert.deepStrictEqual(_.assertArrayEqual(_.eqArrays([1, 2, 3], [1, 2, 3])), "PASS");
+   });
+ });
+
  describe('Middle', function () {
-  it("Should return true if 2 object are identical)", function() {
+  it("Should return [3,4] for [1, 2, 3, 4, 5, 6])", function() {
     const input = [1, 2, 3, 4, 5, 6];
     const expectedOutput = [3, 4];
-    assert.deepEqual(_.middle(input), expectedOutput);
+    assert.deepStrictEqual(_.middle(input), expectedOutput);
    });
+   it("Should return [3] for [1, 2, 3, 4, 5]", function() {
+    assert.deepStrictEqual(_.middle([1, 2, 3, 4, 5]), [3]); 
+  });
+
+  it("Should returns [2,3] for [1, 2, 3, 4]", () => {
+  assert.deepStrictEqual(_.middle([1, 2, 3, 4]), [2, 3]); 
+  });
  });
 
