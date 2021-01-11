@@ -1,0 +1,19 @@
+{
+  "name": "lotidev2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lotide.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1"
+  }
+}
